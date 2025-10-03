@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin - Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container admin-card">
+    <img src="logo.png" alt="Logo" class="logo" />
+
+    <h1>Dashboard de Empresas</h1>
+    <p>Acompanhe os status das empresas importadas:</p>
+
+    <div class="actions">
+      <a href="admin-area.html" class="btn">Upload de Planilha</a>
+      <button id="reloadBtn">🔄 Recarregar Lista</button>
+    </div>
+
+    <!-- Caixa de mensagens -->
+    <div id="messageBox" class="message hidden"></div>
+
+    <!-- Tabela -->
+    <table id="empresasTable">
+      <thead>
+        <tr>
+          <th>Razão Social</th>
+          <th>CNPJ</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td colspan="3">Carregando...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="admin-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin - Área</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container admin-card">
+    <img src="logo.svg" alt="Logo" class="logo" />
+
+    <h1>Painel do Admin</h1>
+    <p>Faça upload da planilha de empresas para atualizar os dados:</p>
+
+    <form id="uploadForm">
+      <input type="file" id="arquivo" name="arquivo" accept=".xlsx,.xls,.csv" required />
+      <button type="submit">Enviar Planilha</button>
+    </form>
+
+    <div id="messageBox" class="message hidden"></div>
+
+        <a href="index.html" class="admin-link">Voltar</a>
+
+  </div>
+
+  <script src="admin-area.js"></script>
+</body>
+</html>
