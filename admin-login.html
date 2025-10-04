@@ -7,16 +7,15 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container admin-card">
-    <img src="logo.svg" alt="Logo" class="logo" />
+  <div class="container auth-card"> <img src="logo.svg" alt="Logo" class="logo" />
 
-    <h1>Área do Admin</h1>
-    <p>Faça login para acessar o painel de gerenciamento</p>
+    <h1>Login Administrativo</h1>
+    <p class="subtitle">Acesse o painel com suas credenciais.</p>
 
     <form id="loginForm">
       <input type="email" id="email" placeholder="E-mail" required />
       <input type="password" id="senha" placeholder="Senha" required />
-      <button type="submit">Entrar</button>
+      <button type="submit" class="blue-btn">Entrar</button>
     </form>
 
     <div id="messageBox" class="message hidden"></div>

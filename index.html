@@ -7,14 +7,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <!-- Logo -->
-    <img src="logo.svg" alt="Logo" class="logo" />
+  <div class="container main-card"> <img src="logo.svg" alt="Logo" class="logo" />
 
-    <h1>Certificados</h1>
-    <p>Digite o CNPJ da sua empresa para emitir o certificado:</p>
-
-    <form id="cnpjForm">
+    <h1>Emissão de Certificados</h1> <p class="subtitle">Insira o **CNPJ** da sua empresa para baixar o certificado digital.</p> <form id="cnpjForm">
       <input
         type="text"
         id="cnpjInput"
@@ -22,14 +17,11 @@
         maxlength="18"
         required
       />
-      <button type="submit">Baixar Certificado</button>
-    </form>
+      <button type="submit" class="blue-btn">Baixar Certificado</button> </form>
 
-    <!-- Caixa de mensagens -->
     <div id="messageBox" class="message hidden"></div>
 
-    <!-- Link Admin -->
-    <a href="admin-login.html" class="admin-link">Área do Admin</a>
+    <a href="admin-login.html" class="admin-link">Acesso Administrativo</a>
   </div>
 
   <script src="index.js"></script>
